@@ -1,4 +1,4 @@
-// Select Elements
+
 const passwordField = document.getElementById("Password");
 const lengthSlider = document.getElementById("pgrbar");
 const rangeValue = document.getElementById("rangeValue");
@@ -11,13 +11,15 @@ const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '-', '{', '}', '[', ']', ';', ':', '<', '>', ',', '.', '?', '/'];
 const alphabets = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz']; // Spreads letters into an array
 
-// Update range value display
-function updateRangeValue() {
+//  range value display
+function updateRangeValue() 
+{
     rangeValue.textContent = `Length: ${lengthSlider.value}`;
 }
 
 // Function to Generate Password
-function generatePassword() {
+function generatePassword() 
+{
     const length = parseInt(lengthSlider.value);
     let characters = [];
     let password = "";
@@ -41,7 +43,8 @@ function generatePassword() {
         return;
     }
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) 
+        {
         const randomIndex = Math.floor(Math.random() * characters.length);
         password += characters[randomIndex];
     }
@@ -49,12 +52,15 @@ function generatePassword() {
     passwordField.value = password;
 }
 
-// Copy Password to Clipboard
-function copyPassword() {
-    if (passwordField.value) {
+
+function copyPassword() 
+{
+    if (passwordField.value) 
+        {
         navigator.clipboard.writeText(passwordField.value);
         alert("Password copied to clipboard!");
-    } else {
-        alert("Generate a password first!");
+    } else 
+    {
+        alert("Pleaase Generate a password first!");
     }
 }

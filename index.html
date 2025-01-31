@@ -22,9 +22,10 @@
             
             <input type="text" id="Password" placeholder="Password will be generated here" readonly />
             
-            <div>
-                <input type="range" id="pgrbar" min="4" max="20" value="12" onchange="updateRangeValue()" />
-                <span id="rangeValue">Length: 12</span>
+            <div class="range-value">
+                <label>Select Length of Password</label>
+                <input type="range" id="pgrbar" min="2" max="20"value="12"  onchange="updateRangeValue()" />
+                <span id="rangeValue">Length:12 </span>
             </div>
     
             <div class="input">
