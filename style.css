@@ -1,7 +1,8 @@
 
 
 body {
-    background-image: url('background.jpg');
+   /* background-image: url('background.jpg');*/
+   background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,23 +28,23 @@ body {
 
 
 .container {
-   
-    background: rgb(5, 214, 246);
-    padding: 25px;
+    background: rgb(127, 129, 126);
+    padding:15px ;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    width: 500px;
     height: 300px;
     text-align: center;
-    margin: 20px auto;  /* Centers horizontally */
+    margin-left: 100px; /* Centers horizontally */
     display: flex;
-    flex-direction: column;
-    align-items: center; 
+    flex-direction: column; 
     justify-content: center; 
 }
-    
-
-
+p{
+    color: #fbfbfb;
+    letter-spacing: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
 
 h1 {
     font-size: 35px;
@@ -52,23 +53,22 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 5px;
 }
-
-
 input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    border: 1px solid #faf8fb;
+    display: flex;
+    align-items: center;
+    border:none;
     border-radius: 5px;
-    margin-bottom: 35px;
+    padding: 10px 15px;
+    background: #9ad2ec;
+    position: relative;
+    width: 350px;
 
 }
 
 /* Range Slider */
 #pgrbar {
     width: 50%;
-    margin-top: 10px;
+    margin-bottom: 30px;
     -webkit-appearance:none;
     appearance: none;
     height: 6px;
@@ -90,6 +90,12 @@ input[type="text"] {
     font-weight: bold;
     color: #fbfbfb;
     margin-top: 5px;
+}
+
+.label1{
+    color: #4b0303;
+    margin-top: 40px;
+
 }
 
 /* Input Section (Checkboxes) */
@@ -123,8 +129,10 @@ input[type="text"] {
 
 .input label {
     font-size: 14px;
-    font-weight: 500;
+    font-weight:bold;
     cursor: pointer;
+    letter-spacing: 1px;
+    color: #190156;
 }
 
 
@@ -154,9 +162,8 @@ input[type="checkbox"]:checked {
 }
 
 button {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 14px;
-    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -164,11 +171,30 @@ button {
     background: #09048a;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    letter-spacing: 1px;
 }
-
+.button1 {
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #980175;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+  
+    
+   
+}
 /* Hover Effect */
 button:hover {
     background: #e68900;
+    transform: scale(1.05);
+}
+.button1:hover {
+    background: #24edff;
     transform: scale(1.05);
 }
 
@@ -185,5 +211,14 @@ button:active {
     }
 }
 
+.copy-icon {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 100px;
+    transition: color 0.3s;
+}
 
+.copy-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
 

@@ -18,17 +18,27 @@
             </nav>
         </div>
         <h1>Welcome to the Password Generator Web Application</h1>
+        
+                
+            
+        </div>
+        <input type="text" id="Password" 
+                placeholder="PASSWORD WILL BE GENRATED HERE" 
+                readonly />
+                <span class="copy-icon" onclick="copyPassword()">
+                    📋
+                </span>
+        
+        
         <div class="container">
-            
-            <input type="text" id="Password" placeholder="Password will be generated here" readonly />
-            
             <div class="range-value">
-                <label>Select Length of Password</label>
+                <label class="label1">Select The Lenght of the PASSWORD</label>
                 <input type="range" id="pgrbar" min="2" max="20"value="12"  onchange="updateRangeValue()" />
                 <span id="rangeValue">Length:12 </span>
             </div>
     
             <div class="input">
+                <p>Select checkbox for required Characters(PASSWORD) </p>
                 <div>
                     <label>Select Number</label>
                     <input type="checkbox" id="number" />
@@ -46,7 +56,7 @@
     
         <div class="btn">
             <button id="Genrtate" onclick="generatePassword()">Generate Password</button>
-            <button id="copy" onclick="copyPassword()">Copy Password</button>
+            <button id="copy" class="button1" onclick="copyPassword()">Copy Password</button>
         </div>
         <script src="passwordgen.js"></script>
     </body>
